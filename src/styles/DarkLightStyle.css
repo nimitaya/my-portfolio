@@ -1,0 +1,56 @@
+:root {
+    --light: #d8dbe0;
+    --dark: #28292c;
+  }
+  
+  
+  .toggle-switch {
+    position: relative;
+    width: 100px; /* Width of the switch */
+    z-index: 10000;
+  }
+  
+  label {
+    position: absolute;
+    width: 100%;
+    height: 50px; /* Height of the switch */
+    background-color: var(--dark);
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  input {
+    position: absolute;
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    transition: 0.3s;
+  }
+  
+  input:checked ~ .slider {
+    background-color: var(--light);
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 6.5px; /* Centering the circle */
+    left: 8px; /* Centering the circle */
+    width: 37.5px; /* Width of the circle */
+    height: 37.5px; /* Height of the circle */
+    border-radius: 50%;
+    box-shadow: inset 14px -4px 0px 0px var(--light); /* tocreate moon shape */
+    background-color: var(--dark);
+    transition: 0.3s;
+  }
+  
+  input:checked ~ .slider::before {
+    transform: translateX(47.5px); /* Movement of the circle */
+    background-color: var(--dark);
+    box-shadow: none;
+  }
