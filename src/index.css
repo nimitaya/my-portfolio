@@ -102,7 +102,7 @@ body.scroll header {
 
 .header-buttons {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 nav a {
