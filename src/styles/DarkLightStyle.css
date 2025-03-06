@@ -10,7 +10,7 @@
     z-index: 10000;
   }
   
-  label {
+  .label {
     position: absolute;
     width: 100%;
     height: 50px; /* Height of the switch */
@@ -19,7 +19,7 @@
     cursor: pointer;
   }
   
-  input {
+  .input {
     position: absolute;
     display: none;
   }
@@ -32,7 +32,7 @@
     transition: 0.3s;
   }
   
-  input:checked ~ .slider {
+  .input:checked ~ .slider {
     background-color: var(--light);
   }
   
@@ -49,7 +49,7 @@
     transition: 0.3s;
   }
   
-  input:checked ~ .slider::before {
+  .input:checked ~ .slider::before {
     transform: translateX(47.5px); /* Movement of the circle */
     background-color: var(--dark);
     box-shadow: none;

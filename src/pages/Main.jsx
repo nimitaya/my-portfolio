@@ -2,6 +2,7 @@ import Hero from "./Hero"
 import About from "./About"
 import Expertise from "./Expertise"
 import Projects from "./Projects"
+import Contact from "./Contact"
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
         <About/>
         <Expertise/>
         <Projects/>
+        <Contact/>
     </main>
   )
 }
