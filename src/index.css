@@ -76,7 +76,7 @@ body {
 /* --- Main --- */
 main {
   max-width: 1440px;
-  margin: 20rem auto 0;
+  margin: 20rem auto 10rem;
 
   display: flex;
   flex-direction: column;
