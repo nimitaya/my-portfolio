@@ -1,6 +1,10 @@
+import Hero from "./Hero"
+
 const Main = () => {
   return (
-    <main>Main Part</main>
+    <main>
+        <Hero/>
+    </main>
   )
 }
 export default Main

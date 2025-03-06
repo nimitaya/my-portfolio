@@ -23,7 +23,6 @@ function App() {
     <>
       <Header />
       <Main/>
-      <h1>Test</h1>
     </>
   );
 }

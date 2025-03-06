@@ -70,9 +70,26 @@ html {
 body {
   background-color: rgb(16, 12, 31);
   height: 200vh;
+  color: var(--color-primary-very-light);
 }
 
 /* --- Main --- */
 main {
   max-width: 1440px;
+  margin-top: 25rem;
+}
+
+h1 {
+  font-size: var(--h1);
+  line-height: var(--h1-line);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: var(--h2);
+  line-height: var(--h2-line);
+}
+
+.emph {
+  font-weight: bold;
 }
