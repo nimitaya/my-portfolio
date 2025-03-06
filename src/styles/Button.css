@@ -1,0 +1,41 @@
+.btn {
+  font-size: var(--body-1);
+  line-height: var(--body-1-line);
+  text-decoration: none;
+  text-transform: uppercase;
+
+  padding: 1.8rem 3.6rem;
+  border-radius: 4rem;
+}
+
+.btn-primary {
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-super-light);
+  box-shadow: rgba(67, 183, 255, 0.2) 0px 0px 24px,
+    rgba(67, 183, 255, 0.2) 0px 0px 39px, rgba(67, 183, 255, 0.2) 0px 0px 60px;
+
+  opacity: 0.9;
+  transition: all 0.3s;
+}
+
+.btn-secondary {
+  color: var(--color-primary-super-light);
+  box-shadow: rgba(67, 183, 255, 0) 0px 0px 24px;
+
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  box-shadow: rgba(67, 183, 255, 0.2) 0px 0px 24px,
+    rgba(67, 183, 255, 0.2) 0px 0px 39px, rgba(67, 183, 255, 0.2) 0px 0px 54px,
+    rgba(67, 183, 255, 0.2) 0px 0px 74px;
+  opacity: 1;
+}
+
+.btn-secondary:hover {
+  color: var(--color-secondary-dark);
+  background-color: var(--color-secondary-super-light);
+  box-shadow: rgba(67, 183, 255, 0.2) 0px 0px 24px,
+    rgba(67, 183, 255, 0.2) 0px 0px 39px, rgba(67, 183, 255, 0.2) 0px 0px 54px,
+    rgba(67, 183, 255, 0.2) 0px 0px 74px;
+}
