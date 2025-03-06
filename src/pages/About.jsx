@@ -1,3 +1,4 @@
+import Button from "../components/Button";
 import "../styles/About.css"
 
 const About = () => {
@@ -19,6 +20,7 @@ const About = () => {
           <span className="italic">Alice in Wonderland</span> continually
           inspire my creativity and drive to innovate.
         </p>
+      <Button insert="Contact me" target="#contact" classN="btn btn-primary"/>
       </div>
     </section>
   );

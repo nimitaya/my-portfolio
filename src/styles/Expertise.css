@@ -1,0 +1,18 @@
+.section-expertise{
+    width: 100%;
+}
+.expertise-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.expertise-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.expertise-card {
+    width: 25rem;
+}
