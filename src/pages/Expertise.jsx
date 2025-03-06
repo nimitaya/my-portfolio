@@ -12,7 +12,10 @@ const Expertise = () => {
             return (
               <div className="expertise-card" key={i + expertise}>
                 <h4>{expertise}</h4>
-                <p>Logo</p>
+                <img
+                  src={`./icons/icon-${expertise}.svg`}
+                  alt={`small picture, representing ${expertise} card`}
+                />
                 <ul>
                   {expertises[expertise].map((info, i) => (
                     <li key={i + info}>{info}</li>
@@ -22,7 +25,6 @@ const Expertise = () => {
             );
           })}
         </div>
-        
       </div>
     </section>
   );

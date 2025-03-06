@@ -1,18 +1,79 @@
-.section-expertise{
-    width: 100%;
+.section-expertise {
+  width: 100%;
 }
 .expertise-text {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  /* width: 75%; */
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
 }
 
+.expertise-text 
+
 .expertise-cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .expertise-card {
-    width: 25rem;
+  width: 25rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    gap: 1.5rem;
+
+  border: 1px solid var(--color-primary);
+  border-radius: 2rem;
+  box-shadow: var(--shine);
+
+  position: relative;
+  transition: box-shadow 0.3s;
+}
+
+.expertise-card h4 {
+  position: absolute;
+  top: -0.1rem;
+  left: 2rem;
+
+  line-height: 0.5rem;
+
+  background-color: rgba(16, 12, 31);
+  border-radius: 2rem;
+}
+
+.expertise-card img {
+    width: 4rem;
+    height: auto;
+    padding: 0.5rem;
+}
+
+.expertise-card:hover {
+  /* box-shadow: rgba(67, 183, 255, 0.2) 0px 0px 44px,
+    inset rgba(67, 183, 255, 0.2) 0px 0px 30px,
+    inset rgba(67, 183, 255, 0.2) 0px 0px 55px,
+    rgba(67, 183, 255, 0.4) 0px 0px 10px; */
+
+    box-shadow: rgba(67, 183, 255, 0.2) 0px 0px 24px,
+  rgba(67, 183, 255, 0.2) 0px 0px 39px, rgba(67, 183, 255, 0.2) 0px 0px 54px,
+  rgba(67, 183, 255, 0.2) 0px 0px 74px;
+}
+
+.expertise-card ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.expertise-card li {
+  font-size: var(--body-1);
+  line-height: var(--body-1-line);
+
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 1rem;
 }

@@ -26,17 +26,17 @@
   transition: all 0.3s;
 }
 
-.btn-primary:hover {
+.btn:hover {
   box-shadow: rgba(67, 183, 255, 0.2) 0px 0px 24px,
-    rgba(67, 183, 255, 0.2) 0px 0px 39px, rgba(67, 183, 255, 0.2) 0px 0px 54px,
-    rgba(67, 183, 255, 0.2) 0px 0px 74px;
+  rgba(67, 183, 255, 0.2) 0px 0px 39px, rgba(67, 183, 255, 0.2) 0px 0px 54px,
+  rgba(67, 183, 255, 0.2) 0px 0px 74px;
+}
+
+.btn-primary:hover {
   opacity: 1;
 }
 
 .btn-secondary:hover {
   color: var(--color-secondary-dark);
   background-color: var(--color-secondary-super-light);
-  box-shadow: rgba(67, 183, 255, 0.2) 0px 0px 24px,
-    rgba(67, 183, 255, 0.2) 0px 0px 39px, rgba(67, 183, 255, 0.2) 0px 0px 54px,
-    rgba(67, 183, 255, 0.2) 0px 0px 74px;
 }
