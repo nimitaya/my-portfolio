@@ -1,5 +1,6 @@
 import Navigation from "../components/Navigation"
 import DarkLight from "../components/DarkLight"
+import "../styles/Header.css"
 
 const Header = () => {
   return (

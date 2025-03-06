@@ -30,7 +30,7 @@ const Navigation = () => {
             />{" "}
           </svg>
         </div>
-        {/* <div className="helper-div"></div> */}
+        <div className="helper-div"></div>
         <ul tabIndex={0} className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
           <li>
             <a href="#">Home</a>

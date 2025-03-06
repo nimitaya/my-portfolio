@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Header from "./pages/Header";
+import Main from "./pages/Main";
 
 function App() {
   // Event Listener um Klasse zu Body hinzuzufügen, sobald gescrollt wird
@@ -21,6 +22,7 @@ function App() {
   return (
     <>
       <Header />
+      <Main/>
       <h1>Test</h1>
     </>
   );
