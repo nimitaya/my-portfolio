@@ -1,6 +1,7 @@
 import Hero from "./Hero"
 import About from "./About"
 import Expertise from "./Expertise"
+import Projects from "./Projects"
 
 const Main = () => {
   return (
@@ -8,6 +9,7 @@ const Main = () => {
         <Hero/>
         <About/>
         <Expertise/>
+        <Projects/>
     </main>
   )
 }
