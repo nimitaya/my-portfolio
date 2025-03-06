@@ -2,7 +2,7 @@ import "../styles/About.css"
 
 const About = () => {
   return (
-    <section className="section-about">
+    <section className="section-about" id="about">
       <div className="about-text">
         <h2>About me</h2>
         <p>
