@@ -77,6 +77,9 @@ const Navigation = () => {
             <a href="#about">About</a>
           </li>
           <li>
+            <a href="#expertise">Expertise</a>
+          </li>
+          <li>
             <a href="#projects">Projects</a>
           </li>
           <li>

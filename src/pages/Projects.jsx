@@ -2,7 +2,7 @@ import "../styles/Projects.css";
 
 const Projects = () => {
   return (
-    <section className="section-projects" id="projects">
+    <section className="section-projects scroll-offset" id="projects">
       <h2>Projects</h2>
       <div className="projects-container">
         <div className="project-card project-card-grow">

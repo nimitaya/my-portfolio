@@ -3,7 +3,7 @@ import "../styles/About.css"
 
 const About = () => {
   return (
-    <section className="section-about" id="about">
+    <section className="section-about scroll-offset" id="about">
       <div className="about-text">
         <h2>About me</h2>
         <p>

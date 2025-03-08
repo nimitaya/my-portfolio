@@ -3,7 +3,7 @@ import "../styles/Expertise.css";
 
 const Expertise = () => {
   return (
-    <section className="section-expertise" id="expertise">
+    <section className="section-expertise scroll-offset" id="expertise">
       <div className="expertise-text">
         <h2>My Expertise</h2>
 

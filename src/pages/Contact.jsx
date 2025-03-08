@@ -2,7 +2,7 @@ import "../styles/Contact.css";
 
 const Contact = () => {
   return (
-    <section className="section-contact" id="contact">
+    <section className="section-contact scroll-offset" id="contact">
       <div className="contact-text">
         <h2>Contact me</h2>
         <p>

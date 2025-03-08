@@ -52,6 +52,10 @@ html {
 }
 
 /* --- Body --- */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background-primary);
   color: var(--color-primary-super-light);
@@ -107,6 +111,10 @@ p {
 
 .italic {
   font-style: italic;
+}
+
+.scroll-offset {
+  scroll-margin-top: 20rem; 
 }
 
 /* ----- Logo ----- */
