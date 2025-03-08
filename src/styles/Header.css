@@ -15,8 +15,8 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  background-color: var(--color-primary-dark);
-  box-shadow: var(--shine);
+  background-color: var(--background-primary);
+  box-shadow: var(--shine-soft);
 }
 
 /* sobald Body die scroll Klasse hat, mach das */
@@ -44,11 +44,8 @@ nav a {
 
 .mobile-btn {
   padding: 1rem;
-  background-color: var(--color-primary-super-light);
-  box-shadow: rgba(67, 183, 255, 0.2) 0px 0px 44px,
-    inset rgba(67, 183, 255, 0.2) 0px 0px 30px,
-    rgba(67, 183, 255, 0.2) 0px 0px 55px, rgba(67, 183, 255, 0.4) 0px 0px 75px,
-    rgba(67, 183, 255, 0.4) 0px 0px 95px;
+  background-color: var(--color-secondary);
+  box-shadow: var(--shine-medium);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,20 +54,20 @@ nav a {
 
 /* ----- Mobile Dropdown ----- */
 /* weil der z-index nicht funktioniert.... */
-.helper-div {
+/* .helper-div {
   position: absolute;
   height: 82px;
   width: 99%;
 
   background-color: var(--color-primary-dark);
   border-radius: clamp(0.75rem, 2vw, 1.5rem);
-  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 5px; */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 5px;
 
   z-index: -9;
   top: 0.1rem;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 .mobile-menu {
   position: absolute;
@@ -91,9 +88,9 @@ nav a {
   padding-bottom: 2.5rem;
   overflow: auto;
 
-  background-color: var(--color-primary-dark);
+  background-color: var(--background-primary);
   border-radius: 3.125rem 3.125rem 1.5rem 1.5rem;
-  box-shadow: var(--shine);
+  box-shadow: var(--shine-soft);
 }
 
 .mobile-menu,

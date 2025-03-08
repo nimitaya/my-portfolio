@@ -72,6 +72,7 @@
 /* Wenn über Label hover, wird jeweiliger Input gefärbt */
 .contact-form label:hover + input, .contact-form label:hover + textarea {
     background-color: rgba(206, 167, 238);
+    box-shadow: var(--shine-medium);
 }
 
 /* ------------------------------------------------ */

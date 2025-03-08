@@ -13,25 +13,17 @@ html {
 :root {
   /* COLORS */
   /* Primary */
-  --color-primary-dark: #461e5c;
-  --color-primary: #72369d;
-  --color-primary-light: #9d4edd;
-  --color-primary-very-light: #b67be6;
-  --color-primary-super-light: #cea7ee;
+  --color-primary-dark: #461e5c; 
+  --color-primary: #72369d; 
+  --color-primary-super-light: #cea7ee; 
   /* Secondary */
-  --color-secondary-dark: #f56a00;
-  --color-secondary: #fa8b01;
-  --color-secondary-light: #ffad03;
-  --color-secondary-very-light: #ffc243;
-  --color-secondary-super-light: #ffcf70;
-  /* Linear Gradient */
-  --gradient-background-dark: linear-gradient(
-    90deg,
-    #2a1237 0%,
-    #461e5c 15%,
-    #461e5c 85%,
-    #2a1237 100%
-  );
+  --color-secondary-dark: #6a0a1d; 
+  --color-secondary: #cc2728; 
+  --color-secondary-light: #e6483d; 
+  --color-secondary-super-light: #f08367; 
+  /* Backgrounds */
+  --background-primary: #100c1f;
+  --gradient-background: linear-gradient(135deg, rgba(16,12,31,1) 0%, rgba(70,30,92,1) 65%, rgba(106,10,29,1) 100%);
 
   /* TYPOGRAPHY */
   /* Headings */
@@ -54,33 +46,25 @@ html {
   --body-4-line: 1.6rem;
 
   /* SHADOWS */
-  --shine: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  /* MARGINS */
-  --margin-more-space: 4.8rem;
-  --margin-small: 2rem;
-  --margin-text: 0.8rem;
-
-  /* PADDINGS */
-  --padding-more-space: 4.8rem;
-  --padding-sections: 2.4rem;
-  --padding-text: 1.6rem;
+  --shine-soft: rgba(182, 123, 230, 0.2) 0px 8px 24px;
+  --shine-medium: rgba(230, 72, 61, 0.2) 0px 0px 24px, rgba(230, 72, 61, 0.2) 0px 0px 39px, rgba(230, 72, 61, 0.2) 0px 0px 60px;
+  --shine-strong: rgba(230, 72, 61, 0.2) 0px 0px 24px, rgba(230, 72, 61, 0.2) 0px 0px 39px, rgba(230, 72, 61, 0.2) 0px 0px 54px, rgba(230, 72, 61, 0.2) 0px 0px 74px;
 }
 
 /* --- Body --- */
 body {
-  background-color: rgb(16, 12, 31);
+  background-color: var(--background-primary);
   color: var(--color-primary-super-light);
-  /* height: 200vh; */
 }
 
 /* --- Main --- */
 main {
   max-width: 1440px;
-  margin: 20rem auto 10rem;
+  margin: 30rem auto 10rem;
 
   display: flex;
   flex-direction: column;
-  gap: 10rem;
+  gap: 40rem;
 }
 
 section {

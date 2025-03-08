@@ -19,15 +19,14 @@
   background-color: var(--color-primary-dark);
   border-radius: 2rem;
   overflow: hidden;
+  box-shadow: var(--shine-soft);
 
   transition: all 0.3s;
 }
 
 .project-card:hover {
   cursor: pointer;
-  box-shadow: rgba(67, 183, 255, 0.2) 0px 0px 24px,
-    rgba(67, 183, 255, 0.2) 0px 0px 39px, rgba(67, 183, 255, 0.2) 0px 0px 54px,
-    rgba(67, 183, 255, 0.2) 0px 0px 74px;
+  box-shadow: var(--shine-strong)
 }
 
 .project-card-grow {
