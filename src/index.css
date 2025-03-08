@@ -130,3 +130,11 @@ p {
   width: 8rem;
   height: auto;
 }
+
+/* ------------------------------------ */
+/* Media Queries */
+@media (max-width: 468px) {
+  section {
+    max-width: 88%;
+  }  
+}

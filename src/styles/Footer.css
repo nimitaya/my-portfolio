@@ -24,3 +24,12 @@ footer a:hover {
     width: 4rem;
     height: auto;
 }
+
+/* ------------------------------------------------ */
+/* Media Queries */
+
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+    }
+}
