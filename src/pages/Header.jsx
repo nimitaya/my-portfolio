@@ -5,7 +5,7 @@ import "../styles/Header.css"
 const Header = () => {
   return (
     <header>
-        <p>Header Logo</p>
+        <img src="./icons/dragon-icon.png" alt="logo dragon" className="dragon-logo"/>
         <div className="header-buttons">
         <DarkLight/>
         <Navigation/>

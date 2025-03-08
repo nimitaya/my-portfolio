@@ -124,3 +124,9 @@ p {
 .italic {
   font-style: italic;
 }
+
+/* ----- Logo ----- */
+.dragon-logo {
+  width: 8rem;
+  height: auto;
+}

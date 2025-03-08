@@ -1,0 +1,26 @@
+footer {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer a:hover {
+    cursor: pointer;
+}
+
+.footer-contact {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-contact a {
+    padding: 0.5rem;
+}
+
+.footer-contact img {
+    width: 4rem;
+    height: auto;
+}
