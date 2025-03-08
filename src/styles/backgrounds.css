@@ -23,6 +23,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: -9;
   transform: rotate(180deg) rotateY(180deg);
 }
 

@@ -1,0 +1,12 @@
+.fly-dragon {
+  display: inline-block;
+  position: fixed;
+  top: 50rem;
+  left: 65%;
+  z-index: -1;
+}
+
+.fly-dragon img {
+    width: 20rem;
+    transform: rotate(-50deg) rotateY(180deg);
+}
