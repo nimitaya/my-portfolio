@@ -52,10 +52,6 @@ html {
 }
 
 /* --- Body --- */
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: var(--background-primary);
   color: var(--color-primary-super-light);
@@ -111,6 +107,11 @@ p {
 
 .italic {
   font-style: italic;
+}
+
+/* Für weiches scrollen zu den Sections mit Offset */
+html {
+  scroll-behavior: smooth;
 }
 
 .scroll-offset {
