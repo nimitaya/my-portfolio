@@ -6,18 +6,17 @@ import Main from "./pages/Main";
 import Footer from "./pages/Footer";
 import { LightModeContext } from "./contexts/LightModeContext";
 import "./styles/backgrounds.css";
-import "./styles/lightmode.css"
 
 function App() {
-  const { isLightMode } = useContext(LightModeContext);
+  // const { isLightMode } = useContext(LightModeContext);
 
   useEffect(() => {
     // Für Dark-Lightmode, wird am Anfang ausgeführt und bei Änderung des isLight
-    if (isLightMode) {
-      document.body.classList.add("lightmode");
-    } else {
-      document.body.classList.remove("lightmode");
-    }
+    // if (isLightMode) {
+    //   document.body.classList.add("lightmode");
+    // } else {
+    //   document.body.classList.remove("lightmode");
+    // }
     
     // Event Listener um Klasse zu Body hinzuzufügen, sobald gescrollt wird
     const handleScroll = () => {
@@ -32,7 +31,7 @@ function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isLightMode]);
+  }, []);
 
   return (
     <>
