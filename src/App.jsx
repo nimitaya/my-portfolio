@@ -1,14 +1,25 @@
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import Dragon from "./components/Dragon";
 import StyleDivs from "./components/StyleDivs";
 import Header from "./pages/Header";
 import Main from "./pages/Main";
 import Footer from "./pages/Footer";
+import { LightModeContext } from "./contexts/LightModeContext";
 import "./styles/backgrounds.css";
+import "./styles/lightmode.css"
 
 function App() {
-  // Event Listener um Klasse zu Body hinzuzufügen, sobald gescrollt wird
+  const { isLightMode } = useContext(LightModeContext);
+
   useEffect(() => {
+    // Für Dark-Lightmode, wird am Anfang ausgeführt und bei Änderung des isLight
+    if (isLightMode) {
+      document.body.classList.add("lightmode");
+    } else {
+      document.body.classList.remove("lightmode");
+    }
+    
+    // Event Listener um Klasse zu Body hinzuzufügen, sobald gescrollt wird
     const handleScroll = () => {
       if (window.scrollY > 100) {
         document.body.classList.add("scroll");
@@ -21,7 +32,7 @@ function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isLightMode]);
 
   return (
     <>
