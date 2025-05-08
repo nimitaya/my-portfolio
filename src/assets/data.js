@@ -1,10 +1,11 @@
 // Information for expertise section
 export const expertises = {
     languages: ["JavaScript", "TypeScript", "CSS", "HTML"],
-    tools: ["React", "Vite", "Tailwind", "Bootstrap", "Sass", "jQuery"],
-    misc: ["VSCode", "Git", "GitHub", "GitLab"],
+    tools: ["React", "Vite", "Mongoose", "Tailwind", "Bootstrap", "Sass", "jQuery"],
+    misc: ["VSCode", "Git", "GitHub", "MongoDB", "GitLab", "Postman"],
   };
 
+  // Information for projecr section
 export const projects = [
   {title: "Project 1",
     description: "Short information about the project or what was done...",

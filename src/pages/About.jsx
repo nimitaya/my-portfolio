@@ -8,7 +8,7 @@ const About = () => {
         <h2>About me</h2>
         <p>
           I’m an aspiring <span className="emph">front-end web developer</span>{" "}
-          currently studying at DCI in Germany, with a passion for crafting
+          currently studying at Digital Career Institute DCI in Germany, with a passion for crafting
           visually appealing, user-centric websites. I love the logic of coding
           and the satisfaction of watching my ideas come to life on the screen.
         </p>

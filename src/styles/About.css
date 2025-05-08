@@ -10,3 +10,22 @@
   flex-direction: column;
   gap: 2rem;
 }
+
+/* ------------------------------------------------ */
+/* Media Queries */
+
+@media (max-width: 400px) {
+  .about-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    text-align: left;
+  }
+
+  .about-text p {
+    background-color: rgba(16, 12, 31, 0.322);
+    border-radius: 1rem;
+  }
+}

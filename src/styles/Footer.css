@@ -11,6 +11,11 @@ footer a:hover {
     cursor: pointer;
 }
 
+.dragon-logo:hover {
+    box-shadow: var(--shine-medium);
+    border-radius: 50%;
+}
+
 .footer-contact {
     display: flex;
     gap: 2rem;
@@ -18,6 +23,11 @@ footer a:hover {
 
 .footer-contact a {
     padding: 0.5rem;
+}
+
+.footer-contact a:hover {
+    box-shadow: var(--shine-soft);
+    border-radius: 50%;
 }
 
 .footer-contact img {

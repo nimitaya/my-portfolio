@@ -5,9 +5,9 @@ const Hero = () => {
   return (
     <section className="section-hero">
       <div className="hero-text">
-        <h1>Greetings, I'm Nimitaya</h1>
+        <h1>Greetings, I'm Sonja</h1>
         <p className="hero-text-secondary">
-          Aspiring <span className="emph">Front-End Developer</span>, based in Germany.
+          Also known as Nimitaya. Aspiring <span className="emph">Front-End Developer</span>, based in Germany.
         </p>
         <p className="hero-text-secondary">Let's get in touch!</p>
       </div>
