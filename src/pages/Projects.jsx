@@ -1,67 +1,69 @@
 import "../styles/Projects.css";
-import { projects } from "../assets/data";
+// import { projects } from "../assets/data";
+import { useState, useEffect } from "react";
 
 const Projects = () => {
+  const [githubProjects, setProjects] = useState([]);
+
+  // Projects fetch from GitHub API
+  const fetchProjects = async () => {
+    try {
+      const response = await fetch(
+        "https://api.github.com/users/nimitaya/repos"
+      );
+      const projectsData = await response.json();
+      const sortedProjects = projectsData.sort(
+        (a, b) => new Date(b.updated_at) - new Date(a.updated_at)
+      );
+      console.log(projectsData);
+
+      setProjects(sortedProjects);
+      console.log(sortedProjects);
+    } catch (error) {
+      console.error("Error fetching data from GitHub:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchProjects();
+  }, []);
+
   return (
     <section className="section-projects scroll-offset" id="projects">
       <h2>Projects</h2>
 
       <div className="projects-container">
-
-      {projects.map((project, index)=> {
-        // Determine if the index matches the pattern
-        const isGrowCard = ((index+1) % 4 === 0 || (index+1) % 4 === 1);
-        return (
-        <div key={index+project.title} className={`project-card ${isGrowCard ? "project-card-grow" : ""}`}>
-        <figure className="project-img-container">
-          <img src={project.image} alt="" className="project-img" />
-        </figure>
-        <div className="project-card-text">
-          <h3>{project.title}</h3>
-          <p>{project.description}</p>
-        </div>
-      </div>
-      )})}
-
-        {/* <div className="project-card project-card-grow">
-          <figure className="project-img-container">
-            <img src="./dragon6.png" alt="" className="project-img" />
-          </figure>
-          <div className="project-card-text">
-            <h3>Project Name 1</h3>
-            <p>Short information about the project or what was done...</p>
-          </div>
-        </div>
-
-        <div className="project-card">
-          <figure className="project-img-container">
-            <img src="./DragonAvatar.jpeg" alt="" className="project-img" />
-          </figure>
-          <div className="project-card-text">
-            <h3>Project Name 2</h3>
-            <p>Short information about the project or what was done...</p>
-          </div>
-        </div>
-
-        <div className="project-card">
-          <figure className="project-img-container">
-            <img src="./dragon1.jpg" alt="" className="project-img" />
-          </figure>
-          <div className="project-card-text">
-            <h3>Project Name 3</h3>
-            <p>Short information about the project or what was done...</p>
-          </div>
-        </div>
-
-        <div className="project-card project-card-grow">
-          <figure className="project-img-container">
-            <img src="./dragon7.jpg" alt="" className="project-img" />
-          </figure>
-          <div className="project-card-text">
-            <h3>Project Name 4</h3>
-            <p>Short information about the project or what was done...</p>
-          </div>
-        </div> */}
+        {githubProjects.map((project, index) => {
+          // Hide these two portfolios
+          const isHide =
+            project.name === "nimitaya" || project.name === "my-portfolio";
+          return (
+            <div
+              key={project.id}
+              className={`project-card ${isHide ? "project-card-hidden" : ""}`}
+            >
+              <a
+                href={`${project.homepage}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <figure className="project-img-container">
+                  <img src={project.image} alt="" className="project-img" />
+                </figure>
+              </a>
+              <a
+                href={`${project.homepage}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="project-card-text">
+                  <h3>{project.name}</h3>
+                  <p>{project.description}</p>
+                </div>
+              </a>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

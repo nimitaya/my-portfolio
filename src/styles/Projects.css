@@ -5,17 +5,12 @@
 }
 
 .projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Divide the row into 5 equal parts */
+  gap: 2rem; /* Add spacing between grid items */
 }
 
 .project-card {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-
   background-color: var(--color-primary-dark);
   border-radius: 2rem;
   overflow: hidden;
@@ -26,15 +21,32 @@
 
 .project-card:hover {
   cursor: pointer;
-  box-shadow: var(--shine-strong)
+  box-shadow: var(--shine-strong);
 }
 
-.project-card-grow {
-  flex-grow: 6;
+/* .project-card-hidden {
+  display: none;
+} */
+
+/* Odd rows: First project takes 3/5, second project takes 2/5 */
+.project-card:nth-child(4n-3) {
+  grid-column: span 3; /* Take up 3/5 of the row */
+}
+.project-card:nth-child(4n-2) {
+  grid-column: span 2; /* Take up 2/5 of the row */
 }
 
-.project-card-secondary {
-  flex-shrink: 1;
+/* Even rows: First project takes 2/5, second project takes 3/5 */
+.project-card:nth-child(4n-1) {
+  grid-column: span 2; /* Take up 2/5 of the row */
+}
+.project-card:nth-child(4n) {
+  grid-column: span 3; /* Take up 3/5 of the row */
+}
+
+.project-card a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-img-container {
@@ -73,8 +85,20 @@
 /* ------------------------------------------------ */
 /* Media Queries */
 
-@media (min-width: 768px) and (max-width: 1272px) {
+/* @media (min-width: 768px) and (max-width: 1272px) {
   .project-card {
     width: 40%;
+  }
+} */
+
+@media (max-width: 768px) {
+  .projects-container {
+    column-gap: 0;
+    row-gap: 2rem;
+    grid-template-columns: 1fr; /* Single column layout for small screens */
+  }
+
+  .project-card {
+    grid-column: span 1; /* Each project takes full width */
   }
 }
