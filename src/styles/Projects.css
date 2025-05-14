@@ -24,10 +24,6 @@
   box-shadow: var(--shine-strong);
 }
 
-/* .project-card-hidden {
-  display: none;
-} */
-
 /* Odd rows: First project takes 3/5, second project takes 2/5 */
 .project-card:nth-child(4n-3) {
   grid-column: span 3; /* Take up 3/5 of the row */
@@ -84,13 +80,6 @@
 
 /* ------------------------------------------------ */
 /* Media Queries */
-
-/* @media (min-width: 768px) and (max-width: 1272px) {
-  .project-card {
-    width: 40%;
-  }
-} */
-
 @media (max-width: 768px) {
   .projects-container {
     column-gap: 0;

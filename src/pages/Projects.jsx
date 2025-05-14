@@ -12,13 +12,17 @@ const Projects = () => {
         "https://api.github.com/users/nimitaya/repos"
       );
       const projectsData = await response.json();
-      const sortedProjects = projectsData.sort(
-        (a, b) => new Date(b.updated_at) - new Date(a.updated_at)
+      const filteredProjects = projectsData.filter(
+        (project) =>
+          project.name !== "nimitaya" &&
+          project.name !== "my-portfolio" &&
+          project.name !== "learning-typescript"
       );
-      console.log(projectsData);
+      const sortedProjects = filteredProjects.sort(
+        (a, b) => new Date(b.pushed_at) - new Date(a.pushed_at)
+      );
 
       setProjects(sortedProjects);
-      console.log(sortedProjects);
     } catch (error) {
       console.error("Error fetching data from GitHub:", error);
     }
@@ -30,25 +34,23 @@ const Projects = () => {
 
   return (
     <section className="section-projects scroll-offset" id="projects">
-      <h2>Projects</h2>
+      <h2>My first Projects</h2>
 
       <div className="projects-container">
-        {githubProjects.map((project, index) => {
-          // Hide these two portfolios
-          const isHide =
-            project.name === "nimitaya" || project.name === "my-portfolio";
+        {githubProjects.map((project) => {
           return (
-            <div
-              key={project.id}
-              className={`project-card ${isHide ? "project-card-hidden" : ""}`}
-            >
+            <div key={project.id} className={`project-card`}>
               <a
                 href={`${project.homepage}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <figure className="project-img-container">
-                  <img src={project.image} alt="" className="project-img" />
+                  <img
+                    src={`./projects/${project.name}.png`}
+                    alt=""
+                    className="project-img"
+                  />
                 </figure>
               </a>
               <a
