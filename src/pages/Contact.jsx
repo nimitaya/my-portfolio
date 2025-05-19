@@ -7,7 +7,7 @@ const Contact = () => {
         <h2>Contact me</h2>
         <p>
           Please use the provided form or contact me by{" "}
-          <a href="mailto:">email</a>.
+          <a href="mailto:sonja.schweren@dci-student.org">email</a>.
         </p>
         <p>Looking forward to hear from you!</p>
       </div>
@@ -29,7 +29,7 @@ const Contact = () => {
         <label htmlFor="message">
           Message <span>(required)</span>
         </label>
-        <textarea name="Message" id="message" required></textarea>
+        <textarea name="Message" id="message" required placeholder="Not yet functional, sorry!"></textarea>
         <button type="submit" className="btn btn-primary">
           Send
         </button>
